@@ -1,0 +1,56 @@
+﻿@Restaurants.Api_HostAddress = http://localhost:5142
+@token =CfDJ8LtizJTozCtLvYPU-0VnCZe-EuUV_hoKeQjcA_BrXYbyxT6GR6gFRnOg461X2STSYmjYWQc6_ezRj2gVIrimr6FYleSwJjDNjNp34sn92oTNn4hqLg54lUBSSHz3X1XXMPtCNpjL_b2XfaGJytPAXcg3FNBJV9cJAQH4MlDCQLJETekGeeMRtAOKtIxrnKyNNePoVW5f2tVjg3JgXgZkFF3ZHL2EfSVL4Zt3b9qjpFW6Kadb08XEesn-vy6jRdvt9ZC5f6iXjQQO5ndOE9CelyWDsfnEgv1wuVdcoyMhlqWKVDOwDLpe72nHLB_3zN6qL4gn6d3Zafnk6LRk-ED-IQHeyJ36npibI6KtPtPoXFtk188khgsPWqX6aXwlCBxBsR0s_y26M_jUV58_Eo0BG0-K96tg5sK9J4VBS-UaNBZCOmtHFhxBA01jhNRnC0iYFXgnWKirHP9rnVqR6ePditRuejQxBDm2jyfFecn7n7ukRAoHhoXN-_KitYGOequv-XqiUGKjUeJmQfg_ICYLSpw0A515qIEtRhixb37YIIgmJfl6WwDKWBYkasphD_raVtWp1q39Ru4tNIgIR4JabG7Epi0z_yFaejmHCowXahuwBn-mHdZbYaRc4exnt5PaFJzQvuotZa-HFsW7cGtbfhDrIZ5eV-az-lvwU01OO9L9KtykWwMp_V0TzgSB1k0PbI7Vy5pEQRk2lnrw3t7Aadw5P1Rpr96FBqpTBSBQdIufGXZZ-effx9IY8-0--rWpkTl6CthpOdt-JJY4FLPBkWKyX0lJuVJpagYRmpZ_hrGk
+GET {{Restaurants.Api_HostAddress}}/api/Restaurants
+Content-Type : application/json
+Authorization:Bearer {{token}}
+
+###
+GET {{Restaurants.Api_HostAddress}}/api/Restaurants/1
+Content-Type : application/json
+Authorization:Bearer {{token}}
+
+
+###
+POST http://localhost:5142/api/identity/register
+Content-Type : application/json
+{
+    "email" : "omaruser@gmail.com",
+    "password" : "Password1!"
+}
+
+###
+POST http://localhost:5142/api/identity/login
+Content-Type : application/json
+{
+    "email" : "adminuser@admin.com",
+    "password" : "Password1!"
+}
+
+###
+POST {{Restaurants.Api_HostAddress}}/api/Restaurants/create
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "Name" : "Tasty Test",
+    "Description" : "A Cozy Restauarnt serving a varisty of delicious food",
+    "Category":"Indian",
+    "HasDelivery":true,
+    "ConatactPhone" :"555-1234",
+    "ConatactEmail" : "info@test.com",
+    "City" : "New york",
+    "Street" : "123 Main street",
+    "PostalCode" :"10-010"
+}
+
+
+###
+POST {{Restaurants.Api_HostAddress}}/api/Identity/userrole
+Content-Type: application/json
+Authorization: Bearer {{token}}
+{
+  "userEmail": "omaruser@gmail.com",
+  "roleName": "User"
+}
+
+

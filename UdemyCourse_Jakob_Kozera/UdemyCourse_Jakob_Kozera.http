@@ -1,0 +1,6 @@
+@UdemyCourse_Jakob_Kozera_HostAddress = http://localhost:5142
+
+GET http://localhost:5142/api/Restaurants/GetAllRestaurants
+Accept: application/json
+
+###
