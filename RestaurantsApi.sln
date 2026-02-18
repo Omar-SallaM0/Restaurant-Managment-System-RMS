@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurants.Api", "UdemyCourse_Jakob_Kozera\Restaurants.Api.csproj", "{B5163918-1211-4CA6-9BB9-1F6A7DB03D5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurants.Api", "Restaurants.Api\Restaurants.Api.csproj", "{B5163918-1211-4CA6-9BB9-1F6A7DB03D5C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resturants.Domain", "Resturants.Domain\Resturants.Domain.csproj", "{83DA5E03-FAD8-48B2-8CDE-784535E5C782}"
 EndProject
